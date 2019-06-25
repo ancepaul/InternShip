@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "491854135957",
+    "firebase_url": "https://kidzee-8267a.firebaseio.com",
+    "project_id": "kidzee-8267a",
+    "storage_bucket": "kidzee-8267a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491854135957:android:65b15bd2f11b55f2",
+        "android_client_info": {
+          "package_name": "com.example.kidzeee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491854135957-g08r19a92n1tjp21ea4dkriovativg39.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kidzeee",
+            "certificate_hash": "77781b3f9215e2e2335f56140e12782b08c49a18"
+          }
+        },
+        {
+          "client_id": "491854135957-1722cu50gf4blo1io9quhotqpvo8qqnk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbSepytgH8eOpd5e7_awS05M80isoR6yM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491854135957-1722cu50gf4blo1io9quhotqpvo8qqnk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
