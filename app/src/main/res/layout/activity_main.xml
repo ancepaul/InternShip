@@ -54,7 +54,8 @@
         android:layout_below="@id/header_relative"
         android:background="@color/colorPrimary"
         app:tabGravity="fill"
-        app:tabTextColor="#a0a0a0"
+        app:tabTextColor="#cdcdcd"
+        app:tabIndicatorColor="@color/colorwhite"
         app:tabSelectedTextColor="@color/colorwhite">
 
     </android.support.design.widget.TabLayout>

@@ -2,6 +2,7 @@ package com.example.kidzeee;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
@@ -35,6 +36,7 @@ import com.crowdfire.cfalertdialog.CFAlertDialog;
 import com.example.kidzeee.fragments.ChatFragments;
 import com.example.kidzeee.fragments.NotificatonFragments;
 import com.example.kidzeee.fragments.StatustFragments;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,6 +62,12 @@ public class MainActivity extends AppCompatActivity {
         adapter=new fragmetAdapter(getSupportFragmentManager());
         tabs.setupWithViewPager(pager);
         pager.setAdapter(adapter);
+
+        if(FirebaseAuth.getInstance().getCurrentUser() == null)
+        {
+            startActivity(new Intent(MainActivity.this,loginactivity.class));
+            finish();
+        }
     }
 
     public class fragmetAdapter extends FragmentPagerAdapter {
