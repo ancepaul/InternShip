@@ -31,12 +31,11 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
-import com.crowdfire.cfalertdialog.CFAlertDialog;
 import com.example.kidzeee.fragments.ChatFragments;
 import com.example.kidzeee.fragments.NotificatonFragments;
 import com.example.kidzeee.fragments.StatustFragments;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -67,6 +66,10 @@ public class MainActivity extends AppCompatActivity {
         {
             startActivity(new Intent(MainActivity.this,loginactivity.class));
             finish();
+        }
+        else
+        {
+            FirebaseDatabase.getInstance().getReference().child("Users").child(FirebaseAuth.getInstance().getCurrentUser().getUid()).child("email").setValue(FirebaseAuth.getInstance().getCurrentUser().getEmail());
         }
     }
 
